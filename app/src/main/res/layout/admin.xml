@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_sfumatura"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/admin" />
+
+        <EditText
+            android:id="@+id/text_email"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/user20x20"
+            android:drawableLeft="@drawable/user20x20"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/text_pass"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_background"
+            android:drawablePadding="13dp"
+            android:drawableStart="@drawable/price20x20"
+            android:drawableLeft="@drawable/price20x20"
+            android:hint="Point"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/ricarica_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_background"
+            android:hint="Ricarica"
+            android:textAllCaps="false"
+            android:textColorHint="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:text="Modifica Tariffe"/>
+
+        <LinearLayout
+            android:id="@+id/tariffe_button"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/backgroud_sfumatura_tariffe"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/disabled_radiant"
+
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/indoor_radiant" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/outdoor_radiant" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/qr_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background_qr_button"
+            android:hint="Acquisisci QR"
+            android:textAllCaps="false"
+            android:textColorHint="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

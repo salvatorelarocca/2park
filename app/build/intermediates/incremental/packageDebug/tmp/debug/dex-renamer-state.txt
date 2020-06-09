@@ -1,0 +1,10 @@
+#Tue Jun 09 10:11:53 CEST 2020
+path.2=classes2.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=C\:\\Users\\salva\\OneDrive\\Desktop\\2Park0506\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes2.dex
+base.1=C\:\\Users\\salva\\OneDrive\\Desktop\\2Park0506\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.0=C\:\\Users\\salva\\OneDrive\\Desktop\\2Park0506\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex

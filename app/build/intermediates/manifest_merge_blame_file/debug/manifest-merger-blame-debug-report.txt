@@ -1,0 +1,139 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.a2park"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:6:5-73
+8        android:minSdkVersion="16"
+8-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:6:5-73
+9        android:targetSdkVersion="29" />
+9-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:6:5-73
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:7:5-64
+11-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:7:22-62
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:8:5-67
+12-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:8:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:9:5-79
+13-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:9:22-76
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:10:5-80
+14-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:10:22-78
+15
+16    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+17    <uses-feature
+17-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:25:5-27:36
+18        android:name="android.hardware.camera"
+18-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:26:9-47
+19        android:required="false" />
+19-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:27:9-33
+20    <uses-feature
+20-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:28:5-30:36
+21        android:name="android.hardware.camera.front"
+21-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:29:9-53
+22        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+22-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:30:9-33
+23    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+24    <uses-feature
+24-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:33:5-35:36
+25        android:name="android.hardware.camera.autofocus"
+25-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:34:9-57
+26        android:required="false" />
+26-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:35:9-33
+27    <uses-feature
+27-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:36:5-38:36
+28        android:name="android.hardware.camera.flash"
+28-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:37:9-53
+29        android:required="false" />
+29-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:38:9-33
+30    <uses-feature
+30-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:39:5-41:36
+31        android:name="android.hardware.screen.landscape"
+31-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:40:9-57
+32        android:required="false" />
+32-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:41:9-33
+33    <uses-feature
+33-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:42:5-44:36
+34        android:name="android.hardware.wifi"
+34-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:43:9-45
+35        android:required="false" />
+35-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:44:9-33
+36
+37    <application
+37-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:11:5-54:19
+38        android:name="androidx.multidex.MultiDexApplication"
+39        android:allowBackup="true"
+39-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:12:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.2.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\9075dbfaab39e40f8982b36dac1019b6\core-1.2.0\AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:hardwareAccelerated="true"
+42-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:17:9-43
+43        android:icon="@mipmap/ic_ap_qr"
+43-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:13:9-40
+44        android:label="@string/app_name"
+44-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:14:9-41
+45        android:roundIcon="@mipmap/ic_ap_qr_round"
+45-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:15:9-51
+46        android:supportsRtl="true"
+46-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:16:9-35
+47        android:testOnly="true"
+48        android:theme="@style/LoginPage" >
+48-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:18:9-41
+49        <activity
+49-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:20:9-23:49
+50            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+50-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:21:13-74
+51            android:clearTaskOnLaunch="true"
+51-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:49:13-45
+52            android:screenOrientation="fullSensor"
+52-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:22:13-51
+53            android:stateNotNeeded="true"
+53-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:51:13-42
+54            android:theme="@style/zxing_CaptureTheme"
+54-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:52:13-54
+55            android:windowSoftInputMode="stateAlwaysHidden" />
+55-->[com.journeyapps:zxing-android-embedded:3.6.0] C:\Users\salva\.gradle\caches\transforms-2\files-2.1\91c90e61e23731294311b4ce4ea1ed06\jetified-zxing-android-embedded-3.6.0\AndroidManifest.xml:53:13-60
+56
+57        <!-- setta stile -->
+58        <activity android:name="com.example.a2park.MainActivity" >
+58-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:26:9-32:20
+58-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:26:19-47
+59            <intent-filter>
+59-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:27:13-31:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:28:17-69
+60-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:28:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:30:17-77
+62-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:30:27-74
+63            </intent-filter>
+64        </activity>
+65        <activity android:name="com.example.a2park.RegisterActivity" >
+65-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:34:9-36:20
+65-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:34:19-51
+66        </activity>
+67        <activity android:name="com.example.a2park.AdminActivity" >
+67-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:38:9-40:20
+67-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:38:19-48
+68        </activity>
+69        <activity android:name="com.example.a2park.TariffeActivity" >
+69-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:42:9-44:20
+69-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:42:19-50
+70        </activity>
+71        <activity android:name="com.example.a2park.UserActivity" >
+71-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:46:9-48:20
+71-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:46:19-47
+72        </activity>
+73        <activity android:name="com.example.a2park.QrCodeUserActivity" >
+73-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:50:9-52:20
+73-->C:\Users\salva\OneDrive\Desktop\2Park0506\app\src\main\AndroidManifest.xml:50:19-53
+74        </activity>
+75    </application>
+76
+77</manifest>
